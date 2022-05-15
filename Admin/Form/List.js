@@ -2,10 +2,12 @@ import { List } from '@List'
 
 const headers = <>
     <th>Key</th>
+    <th>Title</th>
 </>
 
 const row = (item) => <>
     <td>{item.key}</td>
+    <td>{item.title}</td>
 </>
 
 const Forms = () => {
