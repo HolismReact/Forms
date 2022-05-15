@@ -18,3 +18,4 @@ const SavedForms = () => {
 }
 
 export default SavedForms;
+export { SavedForms }

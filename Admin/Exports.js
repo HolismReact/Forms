@@ -1,5 +1,5 @@
 import { Forms } from './Form/List'
-import { SavedForms } from './SsavedForm/List'
+import { SavedForms } from './SavedForm/List'
 import NoteAltIcon from '@mui/icons-material/NoteAlt';
 
 const FormsRoutes = [
@@ -32,4 +32,5 @@ const FormsMenu = [
 
 export { FormsRoutes }
 export { Forms }
+export { SavedForms }
 export { FormsMenu }
