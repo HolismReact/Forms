@@ -24,7 +24,7 @@ const FormsMenu = [
             },
             {
                 "title": "Saved Forms",
-                "url": "/savedForm"
+                "url": "/savedForms"
             }
         ]
     }
