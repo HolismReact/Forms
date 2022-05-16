@@ -1,4 +1,5 @@
 import { List, BooleanProperty, ValueWithTitle } from '@List'
+import EditField from './Edit'
 
 const headers = <>
     <th>Key</th>
@@ -43,6 +44,7 @@ const Fields = () => {
         entityType='field'
         headers={headers}
         row={row}
+        edit={EditField}
     />
 }
 

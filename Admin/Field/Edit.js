@@ -1,4 +1,4 @@
-import { Form, Text, Boolean } from '@Form'
+import { Form, Text } from '@Form'
 
 const inputs = <>
     <Text
@@ -13,17 +13,13 @@ const inputs = <>
         column='Hint'
         placeholder='Hint'
     />
-    <Boolean
-        column='IsRequired'
-        placholder=""
-    />
 </>
 
-const EditForm = () => {
+const EditField = () => {
     return <Form
-        entityType='form'
+        entityType='field'
         inputs={inputs}
     />
 }
 
-export default EditForm
+export default EditField
