@@ -6,6 +6,7 @@ import EditForm from './Edit';
 const headers = <>
     <th>Key</th>
     <th>Title</th>
+    <td>Fields count</td>
 </>
 
 const row = (item) => <>
@@ -16,6 +17,7 @@ const row = (item) => <>
             title={item.description}
         />
     </td>
+    <td>{item.fieldsCount}</td>
 </>
 
 const itemActions = (item) => <>
