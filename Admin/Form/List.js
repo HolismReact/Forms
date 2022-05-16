@@ -1,4 +1,7 @@
-import { List } from '@List'
+import { List, ItemAction, ValueWithTitle } from '@List'
+import ListAltIcon from '@mui/icons-material/ListAlt';
+import NoteAltIcon from '@mui/icons-material/NoteAlt';
+import EditForm from './Edit';
 
 const headers = <>
     <th>Key</th>
@@ -7,7 +10,25 @@ const headers = <>
 
 const row = (item) => <>
     <td>{item.key}</td>
-    <td>{item.title}</td>
+    <td>
+        <ValueWithTitle
+            value={item.title}
+            title={item.description}
+        />
+    </td>
+</>
+
+const itemActions = (item) => <>
+    <ItemAction
+        title='Manage fields'
+        icon={ListAltIcon}
+        goTo={`/fields?formId=${item.id}`}
+    />
+    <ItemAction
+        title='See filled forms'
+        icon={NoteAltIcon}
+        goTo={`/savedForms?formId=${item.id}`}
+    />
 </>
 
 const Forms = () => {
@@ -16,6 +37,8 @@ const Forms = () => {
         entityType='form'
         headers={headers}
         row={row}
+        edit={EditForm}
+        itemActions={itemActions}
     />
 }
 
