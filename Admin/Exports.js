@@ -1,7 +1,7 @@
+import NoteAltIcon from '@mui/icons-material/NoteAlt';
 import { Forms } from './Form/List'
 import { Fields } from './Field/List'
 import { SavedForms } from './SavedForm/List'
-import NoteAltIcon from '@mui/icons-material/NoteAlt';
 
 const FormsRoutes = [
     {
