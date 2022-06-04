@@ -5,31 +5,32 @@ import { SavedForms } from './SavedForm/List'
 
 const FormsRoutes = [
     {
-        "path": "/forms",
-        "component": Forms
+        path: "/forms",
+        component: Forms
     },
     {
-        "path": "/fields",
-        "component": Fields
+        path: "/fields",
+        component: Fields
     },
     {
-        "path": "/savedForms",
-        "component": SavedForms
+        path: "/savedForms",
+        component: SavedForms
     }
 ]
 
 const FormsMenu = [
     {
-        "title": "Forms",
-        "icon": NoteAltIcon,
-        "children": [
+        title: "Forms",
+        icon: NoteAltIcon,
+        superAdmin: true,
+        children: [
             {
-                "title": "Forms",
-                "url": "/forms"
+                title: "Forms",
+                url: "/forms"
             },
             {
-                "title": "Saved Forms",
-                "url": "/savedForms"
+                title: "Saved Forms",
+                url: "/savedForms"
             }
         ]
     }
